@@ -8,10 +8,17 @@
 
 import UIKit
 
-class SearchScreenViewController: UIViewController {
+class SearchScreenViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var searchTextfield: UITextField!
+    @IBOutlet weak var trendingTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        trendingTableView.delegate = self
+        trendingTableView.dataSource = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,15 +28,20 @@ class SearchScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func searchButton(_ sender: Any) {
     }
-    */
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
 
 }
