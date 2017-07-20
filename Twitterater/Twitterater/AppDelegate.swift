@@ -8,12 +8,12 @@
 
 import UIKit
 import CoreData
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rootController.view.frame = self.window!.frame
         self.window!.rootViewController = rootController
         self.window!.makeKeyAndVisible()
+        
+        Twitter.sharedInstance().start(withConsumerKey: "LNDFC2oCX9nV8JAselR0Hfm7p", consumerSecret: "gtkL0F2LxOlzOQKExcKF9JHmWaiWK1lhx8ZQevK3e7zmIB6dyk")
         
         return true
     }

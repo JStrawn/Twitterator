@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		615EC2A01F211C6F0026739A /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */; };
 		615EC2A11F211C6F0026739A /* SearchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */; };
-		615EC2A41F211DAD0026739A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC2A21F211DAD0026739A /* LoginViewController.swift */; };
-		615EC2A51F211DAD0026739A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC2A31F211DAD0026739A /* LoginViewController.xib */; };
 		615EC2A81F211DC70026739A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC2A61F211DC70026739A /* ResultsViewController.swift */; };
 		615EC2A91F211DC70026739A /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC2A71F211DC70026739A /* ResultsViewController.xib */; };
 		6F12D30B5C19BC944A278D04 /* Pods_Twitterater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7B20B498429F8E435E0EF /* Pods_Twitterater.framework */; };
@@ -23,8 +21,6 @@
 /* Begin PBXFileReference section */
 		615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
 		615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchScreenViewController.xib; sourceTree = "<group>"; };
-		615EC2A21F211DAD0026739A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		615EC2A31F211DAD0026739A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		615EC2A61F211DC70026739A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		615EC2A71F211DC70026739A /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		7A0237108E447F7BF7384045 /* Pods-Twitterater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitterater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitterater/Pods-Twitterater.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,8 +79,6 @@
 				C33D019E1F210A6700B25659 /* AppDelegate.swift */,
 				615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */,
 				615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */,
-				615EC2A21F211DAD0026739A /* LoginViewController.swift */,
-				615EC2A31F211DAD0026739A /* LoginViewController.xib */,
 				615EC2A61F211DC70026739A /* ResultsViewController.swift */,
 				615EC2A71F211DC70026739A /* ResultsViewController.xib */,
 				C33D01A81F210A6700B25659 /* Assets.xcassets */,
@@ -166,7 +160,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615EC2A51F211DAD0026739A /* LoginViewController.xib in Resources */,
 				C33D01AC1F210A6700B25659 /* LaunchScreen.storyboard in Resources */,
 				615EC2A91F211DC70026739A /* ResultsViewController.xib in Resources */,
 				615EC2A11F211C6F0026739A /* SearchScreenViewController.xib in Resources */,
@@ -229,7 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615EC2A41F211DAD0026739A /* LoginViewController.swift in Sources */,
 				C33D019F1F210A6700B25659 /* AppDelegate.swift in Sources */,
 				615EC2A01F211C6F0026739A /* SearchScreenViewController.swift in Sources */,
 				615EC2A81F211DC70026739A /* ResultsViewController.swift in Sources */,
