@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615EC2A01F211C6F0026739A /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */; };
+		615EC2A11F211C6F0026739A /* SearchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */; };
+		615EC2A41F211DAD0026739A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC2A21F211DAD0026739A /* LoginViewController.swift */; };
+		615EC2A51F211DAD0026739A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC2A31F211DAD0026739A /* LoginViewController.xib */; };
+		615EC2A81F211DC70026739A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EC2A61F211DC70026739A /* ResultsViewController.swift */; };
+		615EC2A91F211DC70026739A /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615EC2A71F211DC70026739A /* ResultsViewController.xib */; };
 		6F12D30B5C19BC944A278D04 /* Pods_Twitterater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E7B20B498429F8E435E0EF /* Pods_Twitterater.framework */; };
 		C33D019F1F210A6700B25659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D019E1F210A6700B25659 /* AppDelegate.swift */; };
-		C33D01A11F210A6700B25659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D01A01F210A6700B25659 /* ViewController.swift */; };
-		C33D01A41F210A6700B25659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33D01A21F210A6700B25659 /* Main.storyboard */; };
 		C33D01A71F210A6700B25659 /* Twitterater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C33D01A51F210A6700B25659 /* Twitterater.xcdatamodeld */; };
 		C33D01A91F210A6700B25659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33D01A81F210A6700B25659 /* Assets.xcassets */; };
 		C33D01AC1F210A6700B25659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33D01AA1F210A6700B25659 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
+		615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchScreenViewController.xib; sourceTree = "<group>"; };
+		615EC2A21F211DAD0026739A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		615EC2A31F211DAD0026739A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		615EC2A61F211DC70026739A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		615EC2A71F211DC70026739A /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		7A0237108E447F7BF7384045 /* Pods-Twitterater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitterater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitterater/Pods-Twitterater.debug.xcconfig"; sourceTree = "<group>"; };
 		A9E7B20B498429F8E435E0EF /* Pods_Twitterater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitterater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33D019B1F210A6700B25659 /* Twitterater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitterater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33D019E1F210A6700B25659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C33D01A01F210A6700B25659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C33D01A31F210A6700B25659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C33D01A61F210A6700B25659 /* Twitterater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Twitterater.xcdatamodel; sourceTree = "<group>"; };
 		C33D01A81F210A6700B25659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C33D01AB1F210A6700B25659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,8 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				C33D019E1F210A6700B25659 /* AppDelegate.swift */,
-				C33D01A01F210A6700B25659 /* ViewController.swift */,
-				C33D01A21F210A6700B25659 /* Main.storyboard */,
+				615EC29E1F211C6F0026739A /* SearchScreenViewController.swift */,
+				615EC29F1F211C6F0026739A /* SearchScreenViewController.xib */,
+				615EC2A21F211DAD0026739A /* LoginViewController.swift */,
+				615EC2A31F211DAD0026739A /* LoginViewController.xib */,
+				615EC2A61F211DC70026739A /* ResultsViewController.swift */,
+				615EC2A71F211DC70026739A /* ResultsViewController.xib */,
 				C33D01A81F210A6700B25659 /* Assets.xcassets */,
 				C33D01AA1F210A6700B25659 /* LaunchScreen.storyboard */,
 				C33D01AD1F210A6700B25659 /* Info.plist */,
@@ -154,9 +166,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615EC2A51F211DAD0026739A /* LoginViewController.xib in Resources */,
 				C33D01AC1F210A6700B25659 /* LaunchScreen.storyboard in Resources */,
+				615EC2A91F211DC70026739A /* ResultsViewController.xib in Resources */,
+				615EC2A11F211C6F0026739A /* SearchScreenViewController.xib in Resources */,
 				C33D01A91F210A6700B25659 /* Assets.xcassets in Resources */,
-				C33D01A41F210A6700B25659 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		38B8D66E49EFE386DC178496 /* [CP] Copy Pods Resources */ = {
@@ -215,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33D01A11F210A6700B25659 /* ViewController.swift in Sources */,
+				615EC2A41F211DAD0026739A /* LoginViewController.swift in Sources */,
 				C33D019F1F210A6700B25659 /* AppDelegate.swift in Sources */,
+				615EC2A01F211C6F0026739A /* SearchScreenViewController.swift in Sources */,
+				615EC2A81F211DC70026739A /* ResultsViewController.swift in Sources */,
 				C33D01A71F210A6700B25659 /* Twitterater.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +240,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C33D01A21F210A6700B25659 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C33D01A31F210A6700B25659 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C33D01AA1F210A6700B25659 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,6 +393,7 @@
 				C33D01B21F210A6700B25659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
