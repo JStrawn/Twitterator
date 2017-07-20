@@ -10,10 +10,21 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var searchTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//       let back = UIBarButtonItem.
+//        navigationBar.item
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

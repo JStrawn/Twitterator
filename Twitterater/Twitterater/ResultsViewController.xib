@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultsViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultsViewController" customModule="Twitterater" customModuleProvider="target">
             <connections>
+                <outlet property="navigationBar" destination="rfW-e2-YcT" id="bri-sh-FYd"/>
+                <outlet property="searchTitle" destination="phW-Np-6M3" id="Z4c-u1-j4F"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +21,71 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfW-e2-YcT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="do this shit programatically" id="phW-Np-6M3">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="FnW-cJ-Hca">
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="-1" id="UsG-T5-bZA"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Tt-zb-G3J" userLabel="ResultsView">
+                    <rect key="frame" x="0.0" y="167" width="375" height="500"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="P1i-Tf-9gR" userLabel="Happy">
+                    <rect key="frame" x="55" y="69" width="98" height="95"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mad" translatesAutoresizingMaskIntoConstraints="NO" id="ekR-FU-fzH" userLabel="Mad">
+                    <rect key="frame" x="220" y="69" width="99" height="99"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbP-j2-ZdB" userLabel="HappyScale">
+                    <rect key="frame" x="0.0" y="44" width="187.5" height="22"/>
+                    <color key="backgroundColor" red="0.69489278730015158" green="1" blue="0.13593701519949764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhP-BI-rPP" userLabel="MadScale">
+                    <rect key="frame" x="188" y="44" width="187.5" height="22"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.39142628210000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.39375226365277782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vhP-BI-rPP" secondAttribute="trailing" id="0o9-fT-DWe"/>
+                <constraint firstItem="HbP-j2-ZdB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" id="0vP-mC-ydP"/>
+                <constraint firstItem="vhP-BI-rPP" firstAttribute="width" secondItem="HbP-j2-ZdB" secondAttribute="width" id="2Dr-i7-UuT"/>
+                <constraint firstItem="rfW-e2-YcT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3R2-b7-1SI"/>
+                <constraint firstItem="4Tt-zb-G3J" firstAttribute="top" secondItem="ekR-FU-fzH" secondAttribute="bottom" constant="-1" id="4Sx-Sl-Tbs"/>
+                <constraint firstItem="HbP-j2-ZdB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6bE-jK-wUN"/>
+                <constraint firstItem="vhP-BI-rPP" firstAttribute="leading" secondItem="HbP-j2-ZdB" secondAttribute="trailing" id="7zh-UX-qUt"/>
+                <constraint firstItem="4Tt-zb-G3J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DGN-A1-Ere"/>
+                <constraint firstItem="P1i-Tf-9gR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="Duk-Go-5Jr"/>
+                <constraint firstItem="ekR-FU-fzH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" constant="-88.5" id="FFc-Dt-h2Y"/>
+                <constraint firstItem="rfW-e2-YcT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kkj-cD-S6L"/>
+                <constraint firstItem="HbP-j2-ZdB" firstAttribute="height" secondItem="rfW-e2-YcT" secondAttribute="height" multiplier="1/2" id="M6R-pG-qvg"/>
+                <constraint firstItem="ekR-FU-fzH" firstAttribute="top" secondItem="rfW-e2-YcT" secondAttribute="bottom" constant="25" id="Q2B-Pt-ZNO"/>
+                <constraint firstItem="HbP-j2-ZdB" firstAttribute="top" secondItem="rfW-e2-YcT" secondAttribute="bottom" id="RcW-FX-Gfr"/>
+                <constraint firstItem="vhP-BI-rPP" firstAttribute="top" secondItem="rfW-e2-YcT" secondAttribute="bottom" id="ZSL-mt-fJC"/>
+                <constraint firstItem="P1i-Tf-9gR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" constant="-89.5" id="c5e-iy-bPq"/>
+                <constraint firstAttribute="trailing" secondItem="rfW-e2-YcT" secondAttribute="trailing" id="dfX-JD-EkY"/>
+                <constraint firstItem="vhP-BI-rPP" firstAttribute="height" secondItem="HbP-j2-ZdB" secondAttribute="height" id="gpe-Uw-ur7"/>
+                <constraint firstItem="P1i-Tf-9gR" firstAttribute="top" secondItem="rfW-e2-YcT" secondAttribute="bottom" constant="25" id="gvK-x6-xby"/>
+                <constraint firstAttribute="trailing" secondItem="ekR-FU-fzH" secondAttribute="trailing" constant="56" id="jOw-Ry-J3C"/>
+                <constraint firstItem="4Tt-zb-G3J" firstAttribute="top" secondItem="P1i-Tf-9gR" secondAttribute="bottom" constant="3" id="jby-BZ-Sxd"/>
+                <constraint firstItem="4Tt-zb-G3J" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="kx4-nP-Pa3"/>
+                <constraint firstAttribute="bottom" secondItem="4Tt-zb-G3J" secondAttribute="bottom" id="pWf-jj-LIj"/>
+                <constraint firstItem="4Tt-zb-G3J" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="3/4" id="wRs-hD-413"/>
+                <constraint firstAttribute="trailing" secondItem="4Tt-zb-G3J" secondAttribute="trailing" id="yii-Ko-zZx"/>
+            </constraints>
+            <point key="canvasLocation" x="38.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="happy" width="640" height="640"/>
+        <image name="mad" width="640" height="640"/>
+    </resources>
 </document>
